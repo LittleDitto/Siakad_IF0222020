@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\ProgramStudiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,9 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('second');
 });
+//route resource
+// Route::resource('/post', \App\Http\Controllers\ProgramStudiController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/PS', [App\Http\Controllers\ProgramStudiController::class, 'index'])->name('programstudi');
