@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\ProgramStudiController;
+use App\Http\Controller\FakultasController;
 
 
 /*
@@ -27,3 +28,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/PS', [App\Http\Controllers\ProgramStudiController::class, 'index'])->name('programstudi');
+Route::resource('fakultas', App\Http\Controllers\FakultasController::class);
+

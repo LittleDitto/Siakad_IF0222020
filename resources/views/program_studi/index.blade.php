@@ -8,7 +8,7 @@
 
 @section('content')
     <p>Data Program Studi</p>
-    <table>
+    <table border="2">
         <thead>
             <tr>
                 <th>Kode Prodi</th>
@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <center>
-        <tbody>
+        <tbody align="center">
             @foreach ($prodi as $items)
             <th>{{$items->kode_prodi}}</th>
             <th>{{$items->nama_prodi}}</th>

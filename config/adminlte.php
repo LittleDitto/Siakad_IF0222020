@@ -334,40 +334,100 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text' => 'Level',
+            'text' => 'Tambah Fakultas',
+            'url' => 'fakultas',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Fakultas',
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'Program Studi',
+                    'text' => 'Sains Dan Teknologi',
                     'url' => 'PS',
+                    'submenu'=>[
+                        [
+                        'text' => 'Informatika',
+                        'url' => '#',
+                    ],
+                    [
+                        'text' => 'Teknik Komputer',
+                        'url' => '#',
+                    ],
+                    [
+                        'text' => 'Produksi Ternak',
+                        'url' => '#',
+                    ],
+                    [
+                        'text' => 'Peternakan',
+                        'url' => '#',
+                    ],
+                    
+                ],
                 ],
                 [
-                    'text' => 'Program Studi',
+                    'text' => 'Kesehatan',
                     'url' => 'PS',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
+                            'text' => 'Fisoerapi',
                             'url' => '#',
                         ],
                         [
-                            'text' => 'level_two',
+                            'text' => 'Akupuntur dan Pengobatan Herbal',
                             'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
                         ],
                     ],
                 ],
                 [
-                    'text' => 'level_one',
-                    'url' => '#',
+                    'text' => 'Komunikasi Dan Bisnis',
+                    'url' => 'PS',
+                    'submenu' => [
+                        [
+                            'text' => 'Bisnis Digital',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'Akuntasi',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'Ilmu Komunikasi',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'Perhotelan',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'Pariwisata',
+                            'url' => '#',
+                        ],
+                    ]
+                ],
+                [
+                    'text' => 'Keguruan dan Pendidikan',
+                    'url' => 'PS',
+                    'submenu' => [
+                        [
+                            'text' => 'Pendidikan Bahasa Arab',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'Pendidikan Kepelatihan Olah Raga',
+                            'url' => '#',
+                        ],
+                    ]
+                ],
+                [
+                    'text' => 'Hukum',
+                    'url' => 'PS',
+                    'submenu' => [
+                        [
+                            'text' => 'Hukum Dan Bisnis',
+                            'url' => '#',
+                        ],
+                    ]
                 ],
             ],
         ],
