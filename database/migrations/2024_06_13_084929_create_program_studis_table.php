@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->integer('kode_prodi');
             $table->string('nama_prodi');
-            $table->integer('kode_fakultas');
+            $table->unsignedBigInteger('fakultas_id'); // Changed to fakultas_id
             $table->timestamps();
 
-            $table->foreign('kode_fakultas')->references('id')->on('fakultas')->onDelete('cascade');
+            $table->foreign('fakultas_id')->references('id')->on('fakultas')->onDelete('cascade');
         });
     }
 

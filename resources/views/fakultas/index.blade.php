@@ -1,12 +1,14 @@
 <!-- resources/views/fakultas/index.blade.php -->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Daftar Fakultas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+@extends('adminlte::page')
+
+@section('title', 'Dashboard')
+
+@section('content_header')
+    <h1>Fakultas</h1>
+@stop
+
+@section('content')
 <div class="container">
     <h2>Daftar Fakultas</h2>
 
@@ -47,5 +49,14 @@
         </tbody>
     </table>
 </div>
-</body>
-</html>
+@stop
+
+@section('css')
+    <!-- {{-- Add here extra stylesheets --}}
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}} -->
+@stop
+
+@section('js')
+    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+@stop
+

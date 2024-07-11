@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\ProgramStudiController;
 use App\Http\Controller\FakultasController;
+use App\Http\Controller\SekolahController;
 
 
 /*
@@ -27,6 +28,11 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/PS', [App\Http\Controllers\ProgramStudiController::class, 'index'])->name('programstudi');
+Route::resource('programstudis',App\Http\Controllers\ProgramStudiController::class);
 Route::resource('fakultas', App\Http\Controllers\FakultasController::class);
+Route::get('/sekolah', [App\Http\Controllers\SekolahController::class, 
+'index']);
+Route::get('/fetch-sekolah', [App\Http\Controllers\SekolahController::class, 
+'fetchSekolah']);
+
 

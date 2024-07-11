@@ -339,95 +339,34 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
+            'text' => 'Sekolah',
+            'url' => 'sekolah',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
             'text' => 'Fakultas',
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
                     'text' => 'Sains Dan Teknologi',
-                    'url' => 'PS',
-                    'submenu'=>[
-                        [
-                        'text' => 'Informatika',
-                        'url' => '#',
-                    ],
-                    [
-                        'text' => 'Teknik Komputer',
-                        'url' => '#',
-                    ],
-                    [
-                        'text' => 'Produksi Ternak',
-                        'url' => '#',
-                    ],
-                    [
-                        'text' => 'Peternakan',
-                        'url' => '#',
-                    ],
-                    
-                ],
+                    'url' => 'programstudis',
                 ],
                 [
                     'text' => 'Kesehatan',
-                    'url' => 'PS',
-                    'submenu' => [
-                        [
-                            'text' => 'Fisoerapi',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Akupuntur dan Pengobatan Herbal',
-                            'url' => '#',
-                        ],
-                    ],
+                    'url' => '',
                 ],
                 [
                     'text' => 'Komunikasi Dan Bisnis',
-                    'url' => 'PS',
-                    'submenu' => [
-                        [
-                            'text' => 'Bisnis Digital',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Akuntasi',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Ilmu Komunikasi',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Perhotelan',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Pariwisata',
-                            'url' => '#',
-                        ],
-                    ]
+                    'url' => '',
+                    
                 ],
                 [
                     'text' => 'Keguruan dan Pendidikan',
-                    'url' => 'PS',
-                    'submenu' => [
-                        [
-                            'text' => 'Pendidikan Bahasa Arab',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Pendidikan Kepelatihan Olah Raga',
-                            'url' => '#',
-                        ],
-                    ]
+                    'url' => '',
                 ],
                 [
                     'text' => 'Hukum',
-                    'url' => 'PS',
-                    'submenu' => [
-                        [
-                            'text' => 'Hukum Dan Bisnis',
-                            'url' => '#',
-                        ],
-                    ]
+                    'url' => '',
                 ],
             ],
         ],
